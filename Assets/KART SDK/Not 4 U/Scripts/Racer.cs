@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "Racer", menuName = "KART SDK/Racer/Racer")]
+public class Racer : ScriptableObject
+{
+    [Tooltip("This is the actual model of the racer, with animations and such.")]
+    public GameObject racerPrefab;
+    [Tooltip("This is what the racer will be called in-game.")]
+    public string racerName;
+    [Tooltip("This is what \"franchise\" the character is from. Be creative!")]
+    public string racerOrigin;
+    [Tooltip("This a short backstory of the character. Character limit is 500.")]
+    public string racerBackstory;
+    [Tooltip("This is the icon used to represent the racer in menus and the map.")]
+    public Texture2D racerIconBase;
+    [Tooltip("This is used in the icon to designate which parts of the icon should be the player's color. Black represents primary color, white represents secondary color. Transparent areas will not be colored.")]
+    public Texture2D racerIconColormap;
+    [Tooltip("These are the default colors for this character. This is the main color.")]
+    public Color defaultPrimaryColor = Color.red;
+    [Tooltip("These are the default colors for this character. This is the secondary color, typically for secondary details.")]
+    public Color defaultSecondaryColor = Color.white;
+
+}
