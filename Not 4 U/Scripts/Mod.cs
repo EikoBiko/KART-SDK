@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Mod", menuName = "KART SDK/Mod")]
@@ -231,7 +230,6 @@ public abstract class Unlockable{
 [System.Serializable]
 public class UnlockableRacer : Unlockable {
     public Racer racer;
-    [Button]
     public override void GenerateID()
     {
         if(itemID != new Hash128()){
@@ -254,7 +252,6 @@ public class UnlockableRacer : Unlockable {
 [System.Serializable]
 public class UnlockableVehicle : Unlockable {
     public Vehicle vehicle;
-    [Button]
     public override void GenerateID()
     {
         if(itemID != new Hash128()){
