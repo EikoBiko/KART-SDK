@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.25f1
+CRC: 2873830200
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 66e955857e214a57d99274b459e73528
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9d3b704a61a9fe154f18b75bbba1c3c0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7e2e3135af7f588a1842ddedd84e44d4
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: ab6f517d7a9e27543aa1fb1cfcc6279f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 519089909df4cd04c8b83f489cecf7dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 533f6f94e23380b4981ac51a4c63ce30, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: eb1a9c8bd19fd344f8d7bdb165dec090, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 1183024399
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: .UnlockableRacer
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Hash128
+Assets:
+- Assets/Models/Workshop/Spookway.asset
+Dependencies: []

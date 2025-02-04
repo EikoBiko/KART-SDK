@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.25f1
+CRC: 1823987516
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d8d7b0df760396201bf984648b71c9ba
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2659af69b4e5e88966ea12dd1631a481
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2a2fd1dbc7367b7a3fe8077083d8e1f7
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9ae0ba3f8e98c7d49a73bbcf15b79a9a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 533f6f94e23380b4981ac51a4c63ce30, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: .UnlockableHorn
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Hash128
+Assets:
+- Assets/KART SDK/References/Horn.asset
+Dependencies: []

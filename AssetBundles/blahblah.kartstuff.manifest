@@ -1,0 +1,97 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.25f1
+CRC: 939374487
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 116046cd5c51f26226edb0010933ce98
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c07c9d93636472498ec0fdf3a03e1d05
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6ce868bae0353bddf68a089b2d086c03
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: e2369c2461c492346850393e53c89ac7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1dcf8e0d96c4ac04c971f6209b7a4ac0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a3dbf94c21a22d74d895b2051a04ba1e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 69e4b0fe549b7ae4f848852aa8a201ec, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3eac6358927d22043809fcdeae0606d5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b9cf9c5931a3b3c4ba456c8213d7ebfc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2755e8bb31878504ab44bdb0fda36f75, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b7ebbc98463ace43b855cf47d2e121c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 159d8a1941d90f2408e8863d41deea81, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 533f6f94e23380b4981ac51a4c63ce30, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5a6cc245055f2bb4c9a55dc43c00580b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d612a84a63330654c85f5ca82e5f68f9, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: .UnlockableTrack
+- AssemblyName: BezierSolution.Runtime
+  ClassName: BezierSolution.BezierPoint/ExtraData
+- AssemblyName: Unity.RenderPipelines.Universal.Runtime
+  ClassName: UnityEngine.Rendering.Universal.TemporalAA/Settings
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Hash128
+Assets:
+- Assets/CONTENT/Blahblah.asset
+Dependencies: []
