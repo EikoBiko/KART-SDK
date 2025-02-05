@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 533f6f94e23380b4981ac51a4c63ce30, type: 3}
-  m_Name: Some Kind of Mod
+  m_Name: Kart Mod 3000
   m_EditorClassIdentifier: 
   modName: KART Mod 3000
   modAuthor: Eiko
@@ -21,7 +21,7 @@ MonoBehaviour:
     unlockPassword: 
     itemID:
       serializedVersion: 2
-      Hash: 00000000000000000000000000000000
+      Hash: 9eac64254ca9dd3c254f87b9a5dcd61d
     racer: {fileID: 11400000, guid: ea5f3114fd19d7740b7aa1029bc29ff9, type: 2}
   vehicles:
   - unlockedByDefault: 0
@@ -30,10 +30,8 @@ MonoBehaviour:
     unlockPassword: 
     itemID:
       serializedVersion: 2
-      Hash: 00000000000000000000000000000000
+      Hash: 46ed0936bc23965a411d0cb4bc983c3f
     vehicle: {fileID: 11400000, guid: 3dad88b6836eb694a94962f1247fbaaf, type: 2}
-  tracks: []
-  horns:
   - unlockedByDefault: 0
     randomUnlockable: 1
     secretUnlockable: 0
@@ -41,5 +39,23 @@ MonoBehaviour:
     itemID:
       serializedVersion: 2
       Hash: 00000000000000000000000000000000
-    horn: {fileID: 11400000, guid: 89a6f0647821e0e4d8e0fc978c1b9559, type: 2}
+    vehicle: {fileID: 11400000, guid: 5dbdd192a92b85548b5418277f1cd496, type: 2}
+  tracks:
+  - unlockedByDefault: 0
+    randomUnlockable: 1
+    secretUnlockable: 0
+    unlockPassword: 
+    itemID:
+      serializedVersion: 2
+      Hash: 00000000000000000000000000000000
+    track: {fileID: 11400000, guid: 413d4ae37d8e24a4d91b225c72e3e7f4, type: 2}
+  horns:
+  - unlockedByDefault: 0
+    randomUnlockable: 1
+    secretUnlockable: 0
+    unlockPassword: 
+    itemID:
+      serializedVersion: 2
+      Hash: d822d464ede23cfebbc96bd22e180061
+    horn: {fileID: 11400000, guid: 2d6df72726865df4f82672c8f95f011a, type: 2}
   music: []

@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.0.25f1
-CRC: 373674168
+CRC: 657031185
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 127ed63b0603fd406438705301f5b5f0
+    Hash: 218989f127c2dfcb3e763e339bcd539b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 69d26adcbaf714e984dd2c5de57de6db
+    Hash: 2ac70615fa5a1ed83d606577115937b0
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 5573b8f04e758a2f8db3ce200678ddc2
+    Hash: bc6106e6cb2e94be86a18e06b29b715b
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,6 +27,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
 - Class: 91
   Script: {instanceID: 0}
 - Class: 95
@@ -34,7 +36,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: ab6f517d7a9e27543aa1fb1cfcc6279f, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 5acebdc93523f1849bb14d1056d8a723, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3e558da42cbae254fa889b1367d37df1, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 519089909df4cd04c8b83f489cecf7dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9ae0ba3f8e98c7d49a73bbcf15b79a9a, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 533f6f94e23380b4981ac51a4c63ce30, type: 3}
 - Class: 114
@@ -45,13 +53,21 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
 - Class: 1183024399
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: Assembly-CSharp
+  ClassName: .UnlockableHorn
+- AssemblyName: Assembly-CSharp
   ClassName: .UnlockableRacer
+- AssemblyName: Assembly-CSharp
+  ClassName: .UnlockableVehicle
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Hash128
 Assets:
-- Assets/Models/Workshop/Spookway.asset
+- Assets/KART SDK/References/Some Kind of Mod.asset
 Dependencies: []

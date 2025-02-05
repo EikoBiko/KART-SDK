@@ -15,10 +15,12 @@ public class ModTestingWindow : EditorWindow
     private bool includeTrack = false;
     private bool includeRacer = false;
     private bool includeVehicle = false;
+    private bool includeHorn = false;
 
     private int trackIndex = 0;
     private int racerIndex = 0;
     private int vehicleIndex = 0;
+    private int hornIndex = 0;
 
     [MenuItem("KART SDK/Playtest...")]
     public static void ShowWindow()
@@ -128,15 +130,28 @@ public class ModTestingWindow : EditorWindow
             }else{
                 includeVehicle = false;
             }
+
+            if (loadedMod.horns.Count > 0)
+            {
+                // Horn
+                includeHorn = EditorGUILayout.Toggle("Test a horn", includeHorn);
+                if (includeHorn && loadedMod.horns != null)
+                {
+                    hornIndex = DisplayRadioButtonList(loadedMod.horns, hornIndex);
+                    GUILayout.Space(10);
+                }
+            }else{
+                includeHorn = false;
+            }
         }
 
 
 
-        if((!includeRacer && !includeVehicle && !includeTrack) || loadedMod == null){
+        if((!includeRacer && !includeVehicle && !includeTrack && !includeHorn) || loadedMod == null){
             return;
         }
 
-        if (includeTrack || includeVehicle || includeRacer)
+        if (includeTrack || includeVehicle || includeRacer || includeHorn)
         {
             GUILayout.Space(10);
             // Create a box for the track preview section
@@ -176,7 +191,7 @@ public class ModTestingWindow : EditorWindow
                 }
                 GUILayout.Space(10);
             }
-            if (includeVehicle && vehicleIndex < loadedMod.racers.Count)
+            if (includeVehicle && vehicleIndex < loadedMod.vehicles.Count)
             {
                 var selectedVehicle = loadedMod.vehicles[vehicleIndex].vehicle;
                 GUILayout.Label("Vehicle: " + selectedVehicle.vehicleName, EditorStyles.boldLabel);
@@ -184,6 +199,12 @@ public class ModTestingWindow : EditorWindow
                 if(thumbnail != null){
                     GUILayout.Label(thumbnail, GUILayout.Width(64), GUILayout.Height(64));
                 }
+                GUILayout.Space(10);
+            }
+            if (includeHorn && hornIndex < loadedMod.horns.Count)
+            {
+                var selectedHorn = loadedMod.horns[hornIndex].horn;
+                GUILayout.Label("Horn: " + selectedHorn.hornName, EditorStyles.boldLabel);
                 GUILayout.Space(10);
             }
 
@@ -276,6 +297,7 @@ public class ModTestingWindow : EditorWindow
         if (includeTrack) arguments += $" --track {trackIndex}";
         if (includeRacer) arguments += $" --racer {racerIndex}";
         if (includeVehicle) arguments += $" --vehicle {vehicleIndex}";
+        if (includeHorn) arguments += $" --horn {hornIndex}";
 
         processInfo.Arguments = arguments;
         processInfo.UseShellExecute = true;

@@ -15,9 +15,7 @@ public class Racer : ScriptableObject
     [TextArea(3,5)]
     public string racerBackstory;
     [Tooltip("This is the icon used to represent the racer in menus and the map.")]
-    public Texture2D racerIconBase;
-    [Tooltip("This is used in the icon to designate which parts of the icon should be the player's color. Black represents primary color, white represents secondary color. Transparent areas will not be colored.")]
-    public Texture2D racerIconColormap;
+    public Icon icon;
     [Tooltip("These are the default colors for this character. This is the main color.")]
     public Color defaultPrimaryColor = Color.red;
     [Tooltip("These are the default colors for this character. This is the secondary color, typically for secondary details.")]

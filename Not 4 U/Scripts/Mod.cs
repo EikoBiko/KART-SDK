@@ -39,7 +39,7 @@ public class Mod : ScriptableObject
 
     public bool IsRacerValid(UnlockableRacer unlockableRacer){
         Racer racer = unlockableRacer.racer;
-        if (racer.racerIconBase == null)
+        if (racer.icon == null)
         {
             GiveError(racer.name + " has no icon!", racer);
             return false;
@@ -223,6 +223,7 @@ public abstract class Unlockable{
     public bool secretUnlockable = false;
     [Tooltip("Enter text here to make this content unlockable via a password. If left blank, it cannot be unlocked this way.")]
     public string unlockPassword = "";
+    [HideInInspector]
     public Hash128 itemID = new Hash128();
     public abstract void GenerateID();
 }

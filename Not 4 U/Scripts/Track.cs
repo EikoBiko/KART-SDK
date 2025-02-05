@@ -8,6 +8,8 @@ public class Track : ScriptableObject
     [Header("Assets")]
     [Tooltip("This is the display name of your track!")]
     public GameObject trackPrefab;
+    [Tooltip("This is the skybox that will be applied when the track is loaded.")]
+    public Material skyboxMaterial;
 
     [Header("Track Selection")]
     [Tooltip("This is the display name of your track!")]
@@ -32,7 +34,6 @@ public class Track : ScriptableObject
     public Color mapColorHigh = Color.white;
     [Tooltip("For the minimap; this color represents lower elevation.")]
     public Color mapColorLow = Color.gray;
-
 
     [Header("Race Settings")]
     [Tooltip("The time needed to earn a bronze medal; measured in minutes, seconds, and milliseconds.")]
