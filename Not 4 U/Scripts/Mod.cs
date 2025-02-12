@@ -14,7 +14,7 @@ public class Mod : ScriptableObject
     public List<UnlockableVehicle> vehicles = new List<UnlockableVehicle>();
     public List<UnlockableTrack> tracks = new List<UnlockableTrack>();
     public List<UnlockableHorn> horns = new List<UnlockableHorn>();
-    public List<UnlockableMusic> music = new List<UnlockableMusic>();
+    public List<UnlockableFigurine> figurines = new List<UnlockableFigurine>();
 
     public override string ToString()
     {
@@ -22,7 +22,7 @@ public class Mod : ScriptableObject
     }
 
     public bool CheckModValidity(){
-        if(!RacersValid() || !VehiclesValid() || !TracksValid() || !MusicValid()){
+        if(!RacersValid() || !VehiclesValid() || !TracksValid() || !FigurinesValid()){
             return false;
         }
         return true;
@@ -155,30 +155,30 @@ public class Mod : ScriptableObject
         return true;
     }
 
-    public bool MusicValid(){
-        foreach(UnlockableMusic unlockableMusic in music){
-            if(!IsMusicValid(unlockableMusic)){
+    public bool FigurinesValid(){
+        foreach(UnlockableFigurine unlockableFigurine in figurines){
+            if(!IsFigurineValid(unlockableFigurine)){
                 return false;
             }
         }
         return true;
     }
 
-    public bool IsMusicValid(UnlockableMusic unlockableMusic){
-        Music music = unlockableMusic.music;
-        if (music.songTitle == "")
+    public bool IsFigurineValid(UnlockableFigurine unlockableFigure){
+        Figurine figurine = unlockableFigure.figurine;
+        if (figurine.figurinePrefab == null)
         {
-            GiveError(music.name + " is missing a song title!", music);
+            GiveError(figurine.name + " is missing a prefab!", figurine);
             return false;
         }
-        if (music.artist == "")
+        if (figurine.figurineName == "")
         {
-            GiveError(music.name + " is missing artist credit!", music);
+            GiveError(figurine.name + " is missing a name!", figurine);
             return false;
         }
-        if (music.musicFile == null)
+        if (figurine.figurineDescription == "")
         {
-            GiveError(music.name + " is missing an audio file!", music);
+            GiveError(figurine.name + " is missing a description!", figurine);
             return false;
         }
         return true;
@@ -317,14 +317,14 @@ public class UnlockableHorn : Unlockable {
 }
 
 [System.Serializable]
-public class UnlockableMusic : Unlockable {
-    public Music music;
+public class UnlockableFigurine : Unlockable {
+    public Figurine figurine;
     public override void GenerateID()
     {
         if(itemID != new Hash128()){
             return;
         }else{
-            string textconversion = JsonUtility.ToJson(music) + System.DateTime.Now.ToString();
+            string textconversion = JsonUtility.ToJson(figurine) + System.DateTime.Now.ToString();
             itemID = Hash128.Compute(textconversion);
         }
     }

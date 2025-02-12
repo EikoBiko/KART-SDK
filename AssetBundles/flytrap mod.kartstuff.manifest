@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.25f1
+CRC: 1299523224
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6bcf27b5ec6c123f63fdbb455cba6aa2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 72a871082a7a575d58de0c69fec19c82
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8e0ddfc24c8f073d7c75173bf819f946
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: ab6f517d7a9e27543aa1fb1cfcc6279f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 519089909df4cd04c8b83f489cecf7dd, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3e0298eb29d195d4885e69f43b31a9c5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 533f6f94e23380b4981ac51a4c63ce30, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 221
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: .UnlockableRacer
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Hash128
+Assets:
+- Assets/CONTENT/Racers/Flytrap/Flytrap Mod.asset
+Dependencies: []

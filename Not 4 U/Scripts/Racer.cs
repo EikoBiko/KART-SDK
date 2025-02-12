@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Racer", menuName = "KART SDK/Racer")]
-public class Racer : ScriptableObject
+public class Racer : Collectable
 {
     [Tooltip("This is the actual model of the racer, with animations and such.")]
     public GameObject racerPrefab;

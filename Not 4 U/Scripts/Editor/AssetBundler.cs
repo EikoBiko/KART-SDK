@@ -3,6 +3,7 @@ using UnityEngine;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+using NUnit.Framework;
 
 public class AssetBundler : Editor
 {
@@ -30,7 +31,7 @@ public class AssetBundler : Editor
             if (mod != null)
             {
                 if(!mod.CheckModValidity()){
-                    mod.GiveError(mod.name + " will not export! See above issue.", mod);
+                    mod.GiveError(mod.name + " will not export! See above issue(s).", mod);
                     continue;
                 }
                 // Run pre-bundling functions on the Mod
@@ -58,7 +59,7 @@ public class AssetBundler : Editor
         foreach(UnlockableVehicle unlockable in mod.vehicles){
             GenerateUnlockableIDs(unlockable);
         }
-        foreach(UnlockableMusic unlockable in mod.music){
+        foreach(UnlockableFigurine unlockable in mod.figurines){
             GenerateUnlockableIDs(unlockable);
         }
         foreach(UnlockableHorn unlockable in mod.horns){
@@ -70,6 +71,34 @@ public class AssetBundler : Editor
         Hash128 zeroHash = new Hash128();
         if(unlockable.itemID == zeroHash){
             unlockable.GenerateID();
+            Hash128 generatedID = unlockable.itemID;
+
+            // Add the ID to the collectable for unlockable lookup
+            switch (unlockable)
+            {
+                case UnlockableRacer content:
+                    content.racer.unlockableID = generatedID;
+                    break;
+
+                case UnlockableVehicle content:
+                    content.vehicle.unlockableID = generatedID;
+                    break;
+
+                case UnlockableHorn content:
+                    content.horn.unlockableID = generatedID;
+                    break;
+
+                case UnlockableFigurine content:
+                    content.figurine.unlockableID = generatedID;
+                    break;
+
+                case UnlockableTrack content:
+                    content.track.unlockableID = generatedID;
+                    break;
+
+                default:
+                    break;
+            }
         }
     }
 

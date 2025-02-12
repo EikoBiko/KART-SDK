@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Track", menuName = "KART SDK/Track")]
-public class Track : ScriptableObject
+public class Track : Collectable
 {
     [Header("Assets")]
     [Tooltip("This is the display name of your track!")]
